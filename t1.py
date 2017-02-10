@@ -97,7 +97,7 @@ sess = tf.Session()
 merged= tf.summary.merge_all()
 writer =tf.summary.FileWriter("logs/",sess.graph)
 
-###matplotlib
+###matplotlib##
 # fig = plt.figure()
 # ax = fig.add_subplot(1, 1, 1)
 # ax.scatter(x_data, y_data)
@@ -106,7 +106,7 @@ writer =tf.summary.FileWriter("logs/",sess.graph)
 
 init = tf.global_variables_initializer()
 sess.run(init)
-
+#fd
 for i in range(1000):
     sess.run(train_step, feed_dict={xs: x_data, ys: y_data})
     if i % 50 == 0:
